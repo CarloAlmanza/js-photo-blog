@@ -1,0 +1,42 @@
+header {
+    background: url(img/wall.png);
+}
+
+body {
+    background: url('img/cork.png');
+}
+
+.title {
+    font-family: 'Edu TAS Beginner', sans-serif;
+    font-size: 3rem;
+}
+
+.card-custom {
+    background: white;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.card-custom img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-text {
+    font-family: 'Sometype Mono', monospace;
+    font-size: 0.9rem;
+    padding-top: 10px;
+}
+
+.pin {
+    width: 15px;
+    height: 15px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
