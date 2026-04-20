@@ -17,19 +17,22 @@
 </head>
 
 <body>
+
     <header>
         <h1 class="title mb-5 py-5 text-center"><strong>ESTATE '24</strong></h1>
     </header>
+
     <div class="container py-5 text-center">
-        <div id="photo-container" class="row g-4 justify-content-center">
-            <!-- JS inserirà qui le card -->
-        </div>
+        <div id="photo-container" class="row g-4 justify-content-center"></div>
     </div>
 
-    <!-- Overlay -->
+    <!-- OVERLAY -->
     <div id="overlay" class="overlay d-none">
         <button id="close-btn" class="close-btn">Chiudi</button>
+
+        <button id="prev-btn" class="nav-btn left">&#10094;</button>
         <img id="overlay-img" src="" alt="">
+        <button id="next-btn" class="nav-btn right">&#10095;</button>
     </div>
 
     <script src="script.js"></script>
