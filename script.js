@@ -42,6 +42,25 @@ function renderPhotos(photos) {
       </div>
     `;
 
+        // EVENTO CLICK
+        const img = col.querySelector("img");
+        img.addEventListener("click", () => {
+            openOverlay(photo.url);
+        });
+
         container.appendChild(col);
     });
 }
+
+const overlay = document.getElementById("overlay");
+const overlayImg = document.getElementById("overlay-img");
+const closeBtn = document.getElementById("close-btn");
+
+function openOverlay(url) {
+    overlayImg.src = url;
+    overlay.classList.remove("d-none");
+}
+
+closeBtn.addEventListener("click", () => {
+    overlay.classList.add("d-none");
+});
