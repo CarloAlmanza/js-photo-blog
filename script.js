@@ -31,7 +31,6 @@ function renderPhotos(photos) {
     container.innerHTML = "";
 
     photos.forEach((photo, index) => {
-
         const col = document.createElement("div");
         col.className = "col-12 col-sm-6 col-md-6 col-lg-4";
 
@@ -40,6 +39,7 @@ function renderPhotos(photos) {
                 <div class="pin"></div>
                 <img src="${photo.url}" alt="">
                 <div class="card-text">${photo.title}</div>
+                <p class="card-text">${photo.date}</p>
             </div>
         `;
 
